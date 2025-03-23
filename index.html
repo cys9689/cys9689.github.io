@@ -3,56 +3,397 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name - Data Expert</title>
+    <title>Yu-Shuo Chen - Data Expert</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Your Name</h1>
-      <p>Data Analyst | Data Scientist | Data Engineer</p>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">YSC</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <div class="profile-container">
+          <div class="profile-image">
+            <img src="images/profile.png" alt="Yu-Shuo Chen" />
+          </div>
+          <div class="profile-info">
+            <h1>Yu-Shuo Chen</h1>
+            <div class="subtitle">
+              Data Engineer | Data Analyst | Data Scientist
+            </div>
+            <div class="location">
+              <i class="fas fa-map-marker-alt"></i> Los Angeles, CA
+            </div>
+            <div class="cta-buttons">
+              <a href="#contact" class="btn primary-btn">Contact Me</a>
+              <a href="#projects" class="btn secondary-btn">View Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am an experienced data expert with a strong background in data
-        analytics, data science, and data engineering. I am passionate about
-        turning data into actionable insights and building scalable data
-        solutions.
-      </p>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-content">
+          <p>
+            I am an experienced data expert with a strong background in data
+            analytics, data science, and data engineering. Currently working as
+            a Data Engineer at HTC VIVE, I specialize in developing data
+            platforms, implementing AI solutions, and building scalable data
+            pipelines. I am passionate about turning data into actionable
+            insights and creating efficient data solutions that drive business
+            value.
+          </p>
+        </div>
+      </div>
     </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Data Analytics (Python, R, SQL)</li>
-        <li>Data Science (Machine Learning, Statistics)</li>
-        <li>Data Engineering (ETL, Cloud Platforms)</li>
-        <li>Visualization (Tableau, Power BI)</li>
-      </ul>
+
+    <section id="experience" class="section alternate">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="section-content">
+          <div class="experience-item">
+            <div class="experience-header">
+              <h3>Data Engineer</h3>
+              <div class="company-date">
+                <span class="company">HTC VIVE (VIVERSE Team)</span>
+                <span class="date">January 2024 - Present</span>
+              </div>
+            </div>
+            <ul class="experience-details">
+              <li>
+                Developed a customer data platform with AI agent integration
+                using LangChain, leveraging Kafka to streamline real-time data
+                processing
+              </li>
+              <li>
+                Engineered automated data pipeline workflows using Airflow and
+                BigQuery, optimizing date-partitioned table refreshes
+              </li>
+              <li>
+                Collaborated in GTM strategy discussions, offering data-backend
+                analysis of VR and eCommerce customer behavior
+              </li>
+              <li>
+                Led intern onboarding, accelerating understanding of products
+                and project scopes
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <h3>Senior Data Analyst</h3>
+              <div class="company-date">
+                <span class="company">HTC VIVE (VIVEPORT Team)</span>
+                <span class="date">November 2022 - December 2023</span>
+              </div>
+            </div>
+            <ul class="experience-details">
+              <li>
+                Incorporated BERT language model for enhanced website search and
+                recommendations, improving search accuracy
+              </li>
+              <li>
+                Built 43+ automated ETL pipelines using a workflow management
+                platform
+              </li>
+              <li>
+                Constructed AWS API using Lambda and CloudWatch to enhance data
+                accessibility
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <h3>Analytics Engineer</h3>
+              <div class="company-date">
+                <span class="company">TCI Gene</span>
+                <span class="date">March 2021 - June 2022</span>
+              </div>
+            </div>
+            <ul class="experience-details">
+              <li>
+                Conducted statistical analysis to compare customer gene
+                expression with disease gene expression
+              </li>
+              <li>
+                Automated report generation process using a React-based web
+                application, reducing report preparation time by 40%
+              </li>
+              <li>
+                Constructed a COVID-19 qPCR result interpreter using Python to
+                reduce doctor's workload
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/username/project1">Project 1</a> -
-          Description
-        </li>
-        <li>
-          <a href="https://github.com/username/project2">Project 2</a> -
-          Description
-        </li>
-      </ul>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-content">
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Programming Languages</h3>
+              <ul class="skill-list">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>R</li>
+                <li>HTML/CSS</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Cloud & Technologies</h3>
+              <ul class="skill-list">
+                <li>Google Cloud Platform (BigQuery, Vertex AI)</li>
+                <li>AWS (S3, EC2, Lambda, SageMaker, Redshift)</li>
+                <li>Kafka, Spark, Snowflake</li>
+                <li>PostgreSQL, MySQL, MongoDB</li>
+                <li>React</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>ML & Data Science</h3>
+              <ul class="skill-list">
+                <li>TensorFlow, PyTorch</li>
+                <li>scikit-learn</li>
+                <li>Pandas, NumPy</li>
+                <li>Power BI, Tableau</li>
+                <li>Google Analytics 4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: your.email@example.com</p>
-      <p>
-        LinkedIn:
-        <a href="https://linkedin.com/in/yourprofile">Your LinkedIn</a>
-      </p>
-      <p>GitHub: <a href="https://github.com/username">Your GitHub</a></p>
+
+    <section id="education" class="section alternate">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="section-content">
+          <div class="education-item">
+            <h3>Master of Science in Analytics</h3>
+            <div class="school-info">
+              <div class="school">University of Southern California</div>
+              <div class="location-date">
+                Los Angeles, CA | August 2023 - May 2025
+              </div>
+            </div>
+            <p>
+              Coursework: Data Structure and Algorithms, Machine Learning for
+              Data Science, Predictive Analytics, Data Management for Analytics
+            </p>
+          </div>
+          <div class="education-item">
+            <h3>Master of Engineering</h3>
+            <div class="school-info">
+              <div class="school">University of California,Berkeley</div>
+              <div class="location-date">
+                Berkeley, CA | August 2019 - May 2020
+              </div>
+            </div>
+            <p>
+              Course: Markov chain Monte Carlo (MCMC), Grammar Theory, Teaming &
+              Project Management
+            </p>
+          </div>
+          <div class="education-item">
+            <h3>Bachelor of Science in Chemical Engineering</h3>
+            <div class="school-info">
+              <div class="school">Michigan State University</div>
+              <div class="location-date">
+                East Lansing, MI | September 2014 - May 2018
+              </div>
+            </div>
+            <p>Coursework: Statistics, Modeling, Dynamic Programming</p>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="section-content">
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-content">
+                <h3>Social Trends Finding from Instagram Images</h3>
+                <div class="project-date">August 2024 - September 2024</div>
+                <p>
+                  Constructed a regression model to predict and classify number
+                  of likes on Instagram posts using a dataset of 3,785 posts,
+                  incorporating vision transformers (CLIP) for tagging images by
+                  categories.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Machine Learning</span>
+                  <span class="tag">Computer Vision</span>
+                  <span class="tag">Python</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-content">
+                <h3>Identification of Frost in Martian HiRISE Images</h3>
+                <div class="project-date">November 2023 - December 2023</div>
+                <p>
+                  Developed and trained a CNN + MLP model operating data from
+                  the JPL public database to classify frost on Mars' surface,
+                  achieving a 96% accuracy rate on test dataset.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">CNN</span>
+                  <span class="tag">Image Classification</span>
+                  <span class="tag">Transfer Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section alternate">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-content">
+          <div class="certification-item">
+            <h3>AWS Certified Cloud Practitioner</h3>
+            <div class="cert-date">December 2024 - December 2027</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="section-content">
+          <div class="contact-grid">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:yushuoch@usc.edu">yushuoch@usc.edu</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:2134799698">(213) 479-9698</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/nickchen89" target="_blank"
+                >linkedin.com/in/nickchen89</a
+              >
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/cys9689" target="_blank"
+                >github.com/cys9689</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
-      <p>&copy; 2025 Your Name. All rights reserved.</p>
+      <div class="container">
+        <p>&copy; 2025 Yu-Shuo Chen. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script>
+      // Mobile menu toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", function () {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll(".nav-links a").forEach((link) => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 70,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+        // Add active class to nav links on scroll
+        window.addEventListener("scroll", function () {
+          const sections = document.querySelectorAll("section");
+          const navLinks = document.querySelectorAll(".nav-links a");
+
+          let current = "";
+
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (pageYOffset >= sectionTop - 100) {
+              current = section.getAttribute("id");
+            }
+          });
+
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${current}`) {
+              link.classList.add("active");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
